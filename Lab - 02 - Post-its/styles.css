@@ -1,0 +1,15 @@
+.container{
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+}
+
+.image-container{
+    position: absolute;
+}
+
+.text-image{
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
