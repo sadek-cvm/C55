@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mukta Malar";
+}
+
+#main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        215deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 25%,
+        /* rgb(32, 147, 255) 100% */ rgb(255, 255, 255) 100%
+    );
+    border: 5px solid black;
+    height: 20rem;
+    width: 14rem;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card-image-container {
+    position: relative;
+    margin-top: -2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-description-container {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-description {
+    text-align: center;
+}
+
+.card-image {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.card-attack-effects {
+    background-image: url("/animations/attack-effect.gif");
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.card-hitpoints-effects {
+    background-image: url("/animations/hitpoints-effect.gif");
+    background-size: cover;
+    border-radius: 50px;
+    height: 4.1rem;
+    width: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.card-hitpoints-container {
+    background-color: #ffdbdb;
+    border: 1px solid #f77c7c;
+    position: relative;
+    border-radius: 50%;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card-attack-container {
+    background-color: #d1ffe7;
+    position: relative;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.middle-container {
+    margin-top: -4.5rem;
+}
+
+.card-attack {
+    font-size: 4rem;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-left: -2rem;
+    margin-top: -1.5rem;
+}
+.buttom-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-cost-container {
+    background-image: url("/images/goldenHexagon.png");
+    background-size: cover;
+    position: relative;
+    height: 4.2rem;
+    width: 4.7rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card-cost {
+    font-size: 4rem;
+}
+
+.card-description {
+    font-weight: 600;
+}
+
+.card-hitpoints {
+    font-size: 4rem;
+}
