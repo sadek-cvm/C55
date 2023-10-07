@@ -19,22 +19,16 @@
         <div>
             <main>
                 <div id="house">
-                    <?php
-                        $num = 0;
-                        foreach ($data["lights"] as $light) {
-                            $num++;
-                            ?>
-                            <img src="img/light-<?= $light["status"] == "1" ? "on" : "off" ?>.png" alt="light<?= $num ?>" id="light<?= $num ?>">
-                            <?php
-                        }
-                    ?>
+                    <img src="img/light-off.png" alt="light1" id="light1">
+                    <img src="img/light-off.png" alt="light2" id="light2">
+                    <img src="img/light-off.png" alt="light3" id="light3">
+                    <img src="img/light-off.png" alt="light4" id="light4">
+                    <img src="img/light-off.png" alt="light5" id="light5">
+                    <img src="img/light-off.png" alt="light6" id="light6">
                 </div>
             </main>
             <footer>
                 <div style="display:flex">
-                    <div class="refresh-section">
-                        <img src="img/btn-refresh.png" alt="refresh" class="btn-refresh">
-                    </div>
                     <div class="steps-section">
                         <h3>Smart Home</h3>
                         <p>
