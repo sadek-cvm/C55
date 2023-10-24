@@ -1,0 +1,13 @@
+
+Player:
+{ 
+["key"]=> string(50) "SmmvHf8JI0zgbIlltTaXgwvvsaZhH0ajPbvx7DzGetd8GcmJi9" 
+["className"]=> string(11) "DemonHunter" 
+["userType"]=> string(6) "Member" 
+["winCount"]=> int(0) 
+["lossCount"]=> int(1) 
+["trophies"]=> int(0) 
+["bestTrophyScore"]=> int(0) 
+["lastLogin"]=> string(24) "2023-10-12T01:35:35.855Z" 
+["welcomeText"]=> string(5) "Hello" 
+}

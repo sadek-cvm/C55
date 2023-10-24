@@ -1,0 +1,30 @@
+
+// Juste pour les select, permet de retourner un dictionnaire ex : $row["username"] (sinon $row[0])
+// $answers = [
+            // {"author" => "ahmed", "answer" => "this is a message"},
+            // {"author" => "sadek", "answer" => "this is a message"},
+            // {"author" => "ali", "answer" => "this is a message"},
+            // ]
+
+<script>
+        console.log(JSON.stringify(<?= $data["json"] ?>))
+    </script>
+
+<!--
+    $map = array();
+    $map["key1"] = "value1";
+    $map["key2"] = "value2";
+
+    echo $map["key1"]; // Outputs "value1"
+
+    foreach($map as $key => $value){
+        echo $key . ' : ' . $value . PHP_EOL;
+    }
+-->
+<?= $data["result"]->name ?>
+                            <!-- object and not php equivalent of hashmap -->
+
+$user = [
+                        "username" => $row["first_name"],
+                        "visibility" => $row["visibility"],
+                    ];
