@@ -12,27 +12,34 @@
 }
 
 .card {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-        215deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 25%,
-        /* rgb(32, 147, 255) 100% */ rgb(255, 255, 255) 100%
-    );
+    background-image: linear-gradient( -35deg,  rgb(254, 255, 177) 11.2%, rgb(250, 202, 202) 70%, rgba(163,230,255,1) 90% );
+
+
     border: 5px solid black;
-    height: 20rem;
+    height: 22.5rem;
     width: 14rem;
     border-radius: 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .card-image-container {
-    position: relative;
-    margin-top: -2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.card-image {
+    background-image: url("../images/Characters/Character_014.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 11.5rem;
+    height: 11rem;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
 
 .card-description-container {
     position: relative;
@@ -46,30 +53,27 @@
     text-align: center;
 }
 
-.card-image {
-    width: 8rem;
-    height: 8rem;
-    border: 1px solid black;
-    border-radius: 20px;
-}
 
-.card-attack-effects {
-    background-image: url("/animations/attack-effect.gif");
+.card-hitpoints-effects {
+    background-image: url("../animations/hitpoints-effect.gif");
     background-size: cover;
-    height: 4rem;
-    width: 4rem;
+    border-radius: 50px;
+    height: 4.6rem;
+    width: 4.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 0;
+    margin-left: -0.3rem;
+    margin-top: -0.3rem;
 }
 
-.card-hitpoints-effects {
-    background-image: url("/animations/hitpoints-effect.gif");
+.card-cost-effects {
+    background-image: url("../animations/cost-effect.gif");
     background-size: cover;
     border-radius: 50px;
-    height: 4.1rem;
-    width: 4.1rem;
+    height: 4.8rem;
+    width: 4.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,20 +81,32 @@
 }
 
 .card-hitpoints-container {
-    background-color: #ffdbdb;
-    border: 1px solid #f77c7c;
+    background-color: #fdd1d1;
+    border: 1px solid #000000;
     position: relative;
     border-radius: 50%;
-    height: 3.2rem;
-    width: 3.2rem;
+    height: 3.3rem;
+    width: 3.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
 }
 
+.card-attack-effects {
+    background-image: url("../animations/attack-effect.gif");
+    background-size: cover;
+    height: 4rem;
+    width: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
 .card-attack-container {
-    background-color: #d1ffe7;
+    /* background-color: #c9f7f8; */
+    background-color: #000000;
     position: relative;
     border-radius: 50%;
     height: 4rem;
@@ -99,10 +115,13 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    /* margin-left: -0.2rem; */
+    border: solid black 1px;
+    color: #b1eaff
 }
 
 .middle-container {
-    margin-top: -4.5rem;
+    margin-top: -6rem;
 }
 
 .card-attack {
@@ -122,12 +141,12 @@
 }
 
 .card-cost-container {
-    background-image: url("/images/goldenHexagon.png");
+    background-image: url("../images/goldenHexagon.png");
     background-size: cover;
     position: relative;
-    height: 4.2rem;
-    width: 4.7rem;
-    margin-top: 0.5rem;
+    height: 3.5rem;
+    width: 3.95rem;
+    margin-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
